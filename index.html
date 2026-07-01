@@ -1,67 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Dream Archive</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tale of Ema - Hollow Knight Vibe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div id="stars"></div>
+    <div class="fog-container">
+        <div class="fog-layer fog-1"></div>
+        <div class="fog-layer fog-2"></div>
+    </div>
 
-<div class="overlay"></div>
+    <canvas id="particlesCanvas"></canvas>
 
-<div class="container">
+    <div class="main-container">
+        
+        <div class="dream-key-container">
+            <div class="dream-key-icon">✧</div>
+            <div class="dream-key-glow"></div>
+        </div>
 
-<h1>DREAM ARCHIVE</h1>
+        <div class="typewriter-box">
+            <h1 id="typewriter-text"></h1>
+        </div>
 
-<div id="terminal">
+        <div class="loading-wrapper">
+            <div class="loading-bar-container">
+                <div class="loading-bar" id="loadingBar"></div>
+            </div>
+            <span class="loading-status" id="loadingStatus">Buscando esencia...</span>
+        </div>
 
-<p></p>
+        <a href="https://presentacionfinal12.my.canva.site/the-tale-of-ema" target="_blank" class="hk-button" id="enterButton">
+            <span class="btn-glow"></span>
+            Ingresar al Sueño
+        </a>
 
-</div>
+    </div>
 
-<div id="progressContainer">
+    <div class="audio-player">
+        <iframe width="0" height="0" src="https://www.youtube.com/embed/0HbnqXnKnuE?autoplay=1&loop=1&playlist=0HbnqXnKnuE" frameborder="0" allow="autoplay"></iframe>
+    </div>
 
-<div id="progressBar"></div>
-
-</div>
-
-<div id="keyBox">
-
-<h2>Dream Key Generated</h2>
-
-<div class="key">
-
-★ STARFALL-365 ★
-
-</div>
-
-</div>
-
-<button id="enter">
-
-ENTER THE KINGDOM
-
-</button>
-
-</div>
-
-<audio id="music" loop>
-
-<source src="music/theme.mp3" type="audio/mpeg">
-
-</audio>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
