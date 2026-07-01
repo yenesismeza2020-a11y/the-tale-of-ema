@@ -8,31 +8,56 @@
 </head>
 <body>
 
+    <!-- Bloqueo para Celulares -->
+    <div id="mobile-blocker">
+        <div class="blocker-content">
+            <div class="dream-key-icon">✧</div>
+            <p>"Este sueño es demasiado vasto para un contenedor tan pequeño... Regresa desde una computadora para despertar la esencia."</p>
+        </div>
+    </div>
+
+    <!-- Fondo de Niebla Animada -->
     <div class="fog-container">
         <div class="fog-layer fog-1"></div>
         <div class="fog-layer fog-2"></div>
     </div>
 
+    <!-- Canvas para Partículas de Esencia -->
     <canvas id="particlesCanvas"></canvas>
 
+    <!-- Contenedor Principal -->
     <div class="main-container">
         
+        <!-- Elemento Místico: Sello de Sueño -->
         <div class="dream-key-container">
-            <div class="dream-key-icon">✧</div>
+            <div class="dream-key-icon" id="seal-icon">🔒</div>
             <div class="dream-key-glow"></div>
         </div>
 
+        <!-- Efecto Máquina de Escribir -->
         <div class="typewriter-box">
             <h1 id="typewriter-text"></h1>
         </div>
 
-        <div class="loading-wrapper">
+        <!-- Barra de Carga -->
+        <div class="loading-wrapper" id="loadingWrapper">
             <div class="loading-bar-container">
                 <div class="loading-bar" id="loadingBar"></div>
             </div>
             <span class="loading-status" id="loadingStatus">Buscando esencia...</span>
         </div>
 
+        <!-- SECCIÓN DEL PUZZLE (Aparece tras la carga) -->
+        <div id="puzzle-section" class="hidden">
+            <p class="puzzle-hint">Golpea los orbes de sueño en el orden correcto para romper el sello...</p>
+            <div class="orbs-container">
+                <div class="dream-orb" data-id="1">✧</div>
+                <div class="dream-orb" data-id="2">✧</div>
+                <div class="dream-orb" data-id="3">✧</div>
+            </div>
+        </div>
+
+        <!-- Botón de Destino (Oculto hasta resolver el puzzle) -->
         <a href="https://presentacionfinal12.my.canva.site/the-tale-of-ema" target="_blank" class="hk-button" id="enterButton">
             <span class="btn-glow"></span>
             Ingresar al Sueño
@@ -47,3 +72,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+  
